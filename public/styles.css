@@ -36,13 +36,28 @@ body {
   font-weight: 100;
 }
 
-.cell {
+.tile {
   transition: all 200ms ease;
-}
-.cell:hover {
-  transform: translateY(-3px);
   stroke: black;
   stroke-width: 1px;
+}
+.tile:hover {
+  stroke: white;
+}
+
+.tile-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.5rem;
+  font-weight: 100;
+  color: black;
+  inline-size: 15ch;
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .tooltip {
@@ -66,6 +81,6 @@ body {
 
 .legend-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: 100;
 }/*# sourceMappingURL=styles.css.map */

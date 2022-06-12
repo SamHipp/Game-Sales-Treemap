@@ -25,14 +25,25 @@ body {
     @include text-styles(1rem, 100);
 }
 
-.cell {
+.tile {
     transition: all 200ms ease;
+    stroke: black;
+    stroke-width: 1px;
     &:hover {
-        transform: translateY(-3px);
-        stroke: black;
-        stroke-width: 1px;
+        // transform: translateY(-3px);
+        stroke: white;
         // fill: white;
     }
+}
+
+.tile-text {
+    @include text-styles(.5rem, 100);
+    color: black;
+    inline-size: 15ch;
+}
+
+.legend-item {
+    @include flex(row, center, flex-start);
 }
 
 .tooltip {
@@ -50,5 +61,5 @@ body {
 }
 
 .legend-text {
-    @include text-styles(.5rem, 100);
+    @include text-styles(1rem, 100);
 }
